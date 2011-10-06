@@ -1,0 +1,80 @@
+--------------------------------------------------------------------------------
+
+Mimesis
+(c) 2010 Petr Nohejl
+
+Projekt Mimesis byl vytvořen v rámci předmětu POV (Počítačové vidění) na FIT VUT
+v Brně. Cílem práce bylo nastudovat možnosti knihovny ARToolKit a vytvořit 
+aplikaci pro rozšířenou realitu využívající tuto knihovnu. Výsledná aplikace
+byla určena pro projekt Mimikry, který se prezentoval na výstavě Designblok
+2010. Více informací naleznete v dokumentaci.
+
+--------------------------------------------------------------------------------
+
+Obsah:
+
+-Doc/dokumentace.pdf - dokumentace k projektu Mimikry
+-Doc/prezentace.pdf - prezentace k projektu Mimikry
+-ARToolKit - soubory projektu pro knihovnu ARToolKit
+   -bin
+      -Data - konfigurační soubory značek a modelů
+      -Wrl - 3D modely ve formátu VRML
+   -examples
+      -lighting - projekt pro Visual Studio 2008, 
+                  demonstrující základní funkce knihovny ARToolKit
+      -mantis - projekt Mimikry pro Visual Studio 2008, 
+                určený pro výstavu Designblok 2010
+
+--------------------------------------------------------------------------------
+
+Sestavení a spuštění projektů:
+
+1. Nainstalujeme ARToolKit pro Visual Studio 2008 a doplňující knihovnu OpenVRML
+   např. podle návodu na oficiálních stránkách:
+   http://www.hitl.washington.edu/artoolkit/documentation/usersetup.htm.
+2. Zkopírujeme obsah adresáře ARToolKit do adresáře s nainstalovaným ARToolKit.
+3. Zkompilujeme a sestavíme projekty mantis a lighting.
+4. V adresáři /bin se vytvoří spustitelné programy Mantis.exe a Lighting.exe. 
+   (Mantisd.exe a Lightingd.exe jsou určeny pro ladění programu).
+5. Pro správnou funkčnost programů je potřeba mít zkopírovány všechny 
+   konfigurační soubory z adresáře /bin/Data a 3D modely z /bin/Wrl.
+6. Připojíme webkameru a spustíme program Mantis.exe nebo Lighting.exe.
+
+--------------------------------------------------------------------------------
+
+Mantis projekt:
+
+Tento projekt je detailně popsán v dokumentaci: dokumentace.pdf.
+
+DŮLEŽITÉ: Program byl vytvořen speciálně pro výstavu Designblok 2010. 
+Samotný program bez použití papírové plastiky ztrácí svůj smysl a je 
+nepoužitelný. Více informací je uvedeno v dokumentaci.
+
+Ovládání programu:
+
+   q or [esc]    Quit program
+   x             Switch 3D model
+   f             Change fullscreen mode
+   c             Change draw mode and texmap mode
+   d             Show debug mode displaying threshold
+   t             Show debug text output
+   a             Draw 3D models always including pattern off
+   w             Increase threshold
+   s             Decrease threshold
+   u i o         Increase position in X Y Z coordinates
+   j k l         Decrease position in X Y Z coordinates
+   1 2 3         Increase rotation in X Y Z coordinates
+   4 5 6         Decrease rotation in X Y Z coordinates
+   ? or h        Show this help
+   
+--------------------------------------------------------------------------------
+
+Lighting projekt:
+
+Tento program demonstruje základní použití knihovny ARToolKit. Vykresluje 
+jednoduchá 3D tělesa na značky Hiro, Kanji, Sample1 a Sample2 
+(které je možné nalézt ve složce /patterns ARToolKit a vytisknout.). 
+Program ukazuje použití více značek v programu a jednoduchou práci se světlem.
+Světlo se pohybuje se žlutou koulí.
+
+--------------------------------------------------------------------------------

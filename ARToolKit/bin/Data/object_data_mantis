@@ -1,0 +1,46 @@
+#the number of patterns to be recognized, top is the most important
+7
+
+#pattern
+VRML	Wrl/mantis.dat
+Data/multi/patt.c
+150.0
+0.0 0.0
+
+#pattern
+VRML	Wrl/mantis_empty.dat
+Data/patt.sample1
+200.0
+0.0 0.0
+
+#pattern
+VRML	Wrl/mantis_empty.dat
+Data/multi/patt.f
+150.0
+0.0 0.0
+
+#pattern
+VRML	Wrl/mantis_empty.dat
+Data/patt.hiro
+200.0
+0.0 0.0
+
+#pattern
+VRML	Wrl/mantis_empty.dat
+Data/patt.kanji
+200.0
+0.0 0.0
+
+#pattern
+VRML	Wrl/mantis_empty.dat
+Data/multi/patt.a
+200.0
+0.0 0.0
+
+#pattern
+VRML	Wrl/mantis_empty.dat
+Data/patt.sample2
+200.0
+0.0 0.0
+
+
